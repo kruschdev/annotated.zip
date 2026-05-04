@@ -10,7 +10,7 @@ Clip any media from the web. Add commentary (text or voice). Remix content. Shar
 
 - **Universal Server Extraction:** Powered by `yt-dlp`, paste URLs to automatically clip YouTube videos, Twitch VODs, Twitch Clips, and even Twitch Live Streams. For articles, highlight web text to capture semantic excerpts instantly.
 - **Social Engagement Layer:** Public feeds with infinite scroll, user profiles, following, voting, and threaded comments.
-- **X (Twitter) Native Integration:** Shared clips automatically generate dynamic Twitter Cards, providing rich media previews and direct deep-links back to your annotated content.
+- **X (Twitter) Native Integration & Profile Sync:** Seamlessly log in via X. Your X profile (username, display name, and avatar) is automatically synchronized to instantly provision your creator identity. Shared clips also generate dynamic Twitter Cards with rich media previews and deep-links back to your content.
 - **High-Fidelity Audio Remixing:** Seamlessly mix extracted video with voiceovers and file uploads using FFmpeg volume ducking to ensure professional-grade production quality.
 - **Crash-Safe Media Processing:** Long-running FFmpeg tasks are wrapped in DBOS Workflows, ensuring that if the server crashes mid-render, the clip generation resumes automatically upon reboot.
 - **Continuous Threaded Annotations:** Specifically designed for articles and long-form text. Rapidly highlight multiple 100-word excerpts and chain them into a continuous thread—all without ever leaving the active tab.
