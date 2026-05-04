@@ -25,7 +25,7 @@ Clip any media from the web. Add commentary (text or voice). Remix content. Shar
 | 2 | Video downgraded to 240p | ✅ | Handled server-side via `ffmpeg -vf scale=-2:240` |
 | 3 | Link back to original source | ✅ | Native "View Original Source" button on Annotation Pages |
 | 4 | "File a claim" button | ✅ | High-contrast `btn-danger` claim reporting mechanism |
-| 5 | Account creation via X or Google | ✅ | Secure OAuth 2.0 integration via `google-auth-library` and `twitter-api-v2` |
+| 5 | Account creation via X | ✅ | Secure OAuth 2.0 integration via `twitter-api-v2` |
 | 6 | Public social feed | ✅ | Paginated `/feed` with full follow + comment + vote systems |
 | 7 | Commentary (Text + Audio) | ✅ | Multi-modal: Textarea + mic toggle + direct audio file upload |
 | 8 | Chrome sidebar extension | ✅ | Manifest V3 `sidePanel` with automatic active-tab URL detection |
