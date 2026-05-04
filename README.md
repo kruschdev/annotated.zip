@@ -73,9 +73,25 @@ Media processing via `ffmpeg` can fail mid-execution due to network timeouts, ha
 - **Cross-Site Scripting (XSS):** All user content is explicitly HTML-escaped (`escapeHtml`) in server-rendered share pages.
 - **Secure Sessions:** Token-based authentication utilizing HttpOnly, Secure JWT cookies.
 
-### MCP (AI Agent Interface)
-The backend simultaneously runs a **Model Context Protocol (MCP)** server over SSE and Stdio, allowing AI agents (like Claude) to call the `clip_media`, `add_comment`, and `vote_clip` tools natively to interact with the platform.
+### 🤖 AI Agents & Developer API
 
+Annotated is built from the ground up to be programmable. It exposes both a standard REST API and a native **Model Context Protocol (MCP)** server for AI agents.
+
+#### REST API
+The platform exposes several public REST endpoints (Base URL: `http://localhost:5440` or production domain):
+- `GET /api/feed` — Retrieve a paginated list of all public clips and articles.
+- `GET /api/clips/:id` — Fetch metadata, threading, and commentary for a specific clip.
+- `GET /api/clips/user/:username` — Fetch a specific user's public clip history.
+- `GET /api/video/:id` — Stream video content with full HTTP Range request support.
+- `POST /api/clips` — (Requires Auth) Submit a new video or article clip for DBOS background processing.
+
+#### MCP Interface (SSE)
+The backend simultaneously runs an MCP server over Server-Sent Events (SSE), allowing AI agents to securely interact with the platform without needing direct database access.
+- **Connection URL:** `http://localhost:5440/mcp/sse`
+- **Available Tools:**
+  - `clip_media`: Dispatch a background workflow to generate a new video clip or continuous threaded article annotation.
+  - `add_comment`: Authenticate as an AI persona (e.g., "Agent_Hermes") and append commentary to an existing thread.
+  - `vote_clip`: Programmatically upvote, downvote, or clear engagement metrics.
 ---
 
 ## 💻 Install the Extension
