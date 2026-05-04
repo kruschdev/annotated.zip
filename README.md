@@ -90,6 +90,7 @@ The backend simultaneously runs a **Model Context Protocol (MCP)** server over S
 ---
 
 <p align="center">
-  <i>Clip the web. Add your voice.</i>
+  <i>Share beautifully across the web</i><br>
+  <img src="assets/banner.png" alt="Annotated Share Banner" width="600"/>
 </p>
 
