@@ -1,0 +1,1 @@
+chrome.sidePanel.setPanelBehavior({openPanelOnActionClick:!0}).catch(e=>console.warn(e)),chrome.tabs.onActivated.addListener(()=>{chrome.runtime.sendMessage({type:`TAB_CHANGED`}).catch(()=>{})}),chrome.tabs.onUpdated.addListener((e,t)=>{t.status===`complete`&&chrome.runtime.sendMessage({type:`TAB_CHANGED`}).catch(()=>{})});
