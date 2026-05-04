@@ -1,0 +1,46 @@
+{
+  "../../../../../../@crx/manifest": {
+    "file": "assets/crx-manifest.js-CodzsUR2.js",
+    "name": "crx-manifest.js",
+    "src": "../../../../../../@crx/manifest",
+    "isEntry": true
+  },
+  "_src-DLxNY6ML.js": {
+    "file": "assets/src-DLxNY6ML.js",
+    "name": "src",
+    "css": [
+      "assets/src-DpSp6HFM.css"
+    ]
+  },
+  "_src-DpSp6HFM.css": {
+    "file": "assets/src-DpSp6HFM.css",
+    "src": "_src-DpSp6HFM.css"
+  },
+  "index.html": {
+    "file": "assets/main-Dqzux_sB.js",
+    "name": "main",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_src-DLxNY6ML.js"
+    ]
+  },
+  "sidepanel.html": {
+    "file": "assets/sidepanel.html-B_B3w8dG.js",
+    "name": "sidepanel.html",
+    "src": "sidepanel.html",
+    "isEntry": true,
+    "imports": [
+      "sidepanel.html"
+    ],
+    "css": [
+      "assets/sidepanel-DYRwNNQT.css"
+    ]
+  },
+  "src/background.js": {
+    "file": "assets/background.js-JDTexIBK.js",
+    "name": "background.js",
+    "src": "src/background.js",
+    "isEntry": true
+  }
+}
